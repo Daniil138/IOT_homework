@@ -1,7 +1,8 @@
 # MQTT IoT: Управление освещением теплицы
 
 Система автоматически управляет LED-подсветкой в теплице на основе данных с датчика освещённости, используя MQTT для передачи данных.
-
+## Видео
+https://photos.app.goo.gl/bW9FBF6wD3BAYHCs5
 ## Архитектура
 ```
 [Arduino с датчиком] → serial → [publisher.py] → MQTT → [recivier.py] → serial → [Arduino с LED]
