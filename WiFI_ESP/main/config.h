@@ -7,3 +7,5 @@ String SSID_AP = "Engener8266";
 String PASSWORD_AP = "123456789";
 
  
+String SSID_CLIENT = "Tecno";
+String PASSWORD_CLIENT = "wwwwwwww";
