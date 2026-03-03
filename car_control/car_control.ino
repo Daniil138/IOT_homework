@@ -5,18 +5,31 @@
 #define SPEED_LEFT 6
 #define DIR_LEFT 7
 
+
+#define FORWARD  HIGH
+#define BACK  LOW
+
+
+void move(bool left_dir, int left_speed, bool right_dir, int right_speed){
+  digitalWrite(DIR_RIGHT, right_dir);
+  digitalWrite(DIR_LEFT, left_dir);
+
+  analogWrite(SPEED_RIGHT, right_speed);
+  analogWrite(SPEED_LEFT, left_speed);
+
+}
+
 void setup() {
-  pinMode(SPEED_1,OUTPUT);
-  pinMode(DIR_1,OUTPUT);
-  pinMode(SPEED_2,OUTPUT);  
-  pinMode(DIR_2,OUTPUT);  
-  digitalWrite(DIR_1, LOW);
-  digitalWrite(DIR_2, HIGH);
-  digitalWrite(SPEED_1, LOW);
-  digitalWrite(SPEED_2, HIGH);
+  pinMode(SPEED_RIGHT,OUTPUT);
+  pinMode(DIR_RIGHT,OUTPUT);
+  pinMode(SPEED_LEFT,OUTPUT);  
+  pinMode(DIR_LEFT,OUTPUT);  
 
 }
 
 void loop() {
+move(BACK, 100, FORWARD, 100 );
+
+  
 
 }
